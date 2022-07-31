@@ -1,0 +1,21 @@
+.sort {
+  margin: 20px auto;
+  font-size: 20px;
+
+  &__title {
+    color: #a7a7a7;
+  }
+
+  &_select {
+    color: rgb(155, 61, 189);
+  }
+  &__item {
+    padding: 0 20px;
+    color: #3a3a3a;
+   
+    &:hover {
+      color: rgb(225, 94, 50);
+      cursor: pointer;
+    }
+  }
+}

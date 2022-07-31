@@ -1,0 +1,100 @@
+{
+  "notebooks": [
+    {
+      "id": "1",
+      "name": "Корректирующая сыворотка для лица с цинком и ниацинамидом от акне/прыщей, черных точек, угрей",
+      "price": 465,
+      "category": "Сыворотка",
+      "activeSubstance": "NIACINAMIDE 10% + ZINC 1%",
+      "picture": "https://images.wbstatic.net/3d/15831134/0.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Сыворотка для лица с экстрактом прополиса 15% и увлажняющим комплексом 2% для решения проблем черных точек, закрытых и открытых комедонов",
+      "price": 515,
+      "category": "Сыворотка",
+      "activeSubstance": "PROPOLIS EXTRACT 15% + MOISTURIZING COMPLEX 2%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/11/New-Cards_59-01-scaled.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Гель для умывания для нормальной кожи с экстрактом солодки 0,5%, центеллы азиатской 0,5% и кипрея канадского 0,5",
+      "price": 530,
+      "category": "Гель для умывания",
+      "activeSubstance": "LICORICE EXTRACT 0.5% + CENTELLA ASIATICA EXTRACT 0.5% + FIREWEED EXTRACT 0.5%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/07/FACT100354_Licorice_extract_05__Centella_asiatica_extract_05__Fireweed_extract_05_150ml-01-min-600x800.png"
+    },
+    {
+      "id": "4",
+      "name": "Сыворотка- пилинг для лица с 15% гликолевой кислотой, глюконолактоном 3%, молочной кислотой 3% и 2% салициловой кислотой",
+      "price": 776,
+      "category": "Сыворотка",
+      "activeSubstance": "GLYCOLIC ACID 15% + GLUCONOLACTONE 3% + LACTIC ACID 3% + SALICYLIC ACID 2%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/01/FACT100274_Glycolic_Acid_15__Gluconolactone_3__Lactic_acid_3__Salicylic_Acid_2-01-1-600x800.png"
+    },
+    {
+      "id": "5",
+      "name": "Выравнивающий крем для лица с койевой кислотой, липидным комплексом и комплексом аминокислот.",
+      "price": 600,
+      "category": "Крем для лица",
+      "activeSubstance": "KOJIC ACID + LIPID COMPLEX + AMINO ACID COMPLEX",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/03/New-Cards_117-01-scaled-600x800.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Матирующий гель для умывания для жирной кожи с голубой глиной 2%, увлажняющим комплексом 2% и эфирным маслом лаванды 0,3%.",
+      "price": 560,
+      "category": "Гель для умывания",
+      "activeSubstance": "BLUE CLAY 2% + HYDRATING COMPLEX 2% + LAVENDER ESSENTIAL OIL 0,3%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/03/Blue-Clay-2-Hydrating-Complex-2-Lavender-essential-oil-03_cads-01-600x800.png"
+    },
+    {
+      "id": "7",
+      "name": "Интенсивный антивозрастной крем для контура глаз с ретинолом 0,3%, ретинилпальмитатом 0,3% и кофеином 0,5%",
+      "price": 520,
+      "category": "Крем для лица",
+      "activeSubstance": "RETINOL 0,3% + RETINYL PALMITATE 0,3% + CAFFEINE 0,5%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/03/Retinol-03-Retinyl-Palmitate-03-Caffeine-05-01-600x800.png"
+    },
+    {
+      "id": "8",
+      "name": "Пенка-пилинг для умывания с 10% гликолевой кислотой, бетаином и аллантоином",
+      "price": 1030,
+      "category": "Пенка для умывания",
+      "activeSubstance": "GLYCOLIC ACID 10% + BETAINE + ALLANTOIN",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/01/New-Cards_96-01-min-scaled-600x800.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Ночной омолаживающий и регенерирующий крем для лица с голубым ретинолом",
+      "price": 640,
+      "category": "Крем для лица",
+      "activeSubstance": "BLUE RETINOL 3%+SHEA BUTTER 2%+RETINOL 0,1%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/01/FACT100283_Blue_Retinol_3__Shea_Butter_2__Retinol_01_cads-09-600x800.png"
+    },
+    {
+      "id": "10",
+      "name": "Матирующая сыворотка для лица от пигментных пятен и купероза с галактомисисом 10% и экстрактом зеленого чая 5%",
+      "price": 680,
+      "category": "Сыворотка",
+      "activeSubstance": "GALACTOMYCES FERMENT FILTRATE 10% + GREEN TEA LEAF EXTRACT 5%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/12/New-Cards_73-01-scaled-600x800.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Очищающая увлажняющая пенка для умывания лица с комплексом AHA-кислот и с салициловой (BHA-) кислотой.",
+      "price": 473,
+      "category": "Пенка для умывания",
+      "activeSubstance": "AHA COMPLEX + BHA ACID/SALICYLIC ACID",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2020/12/New-Cards_3-52.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Мягкая очищающая пенка с аминокислотами овса и фосфолипидами",
+      "price": 1010,
+      "category": "Пенка для умывания",
+      "activeSubstance": "OAT AMINO ACIDS + PHOSPHOLIPIDS",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/10/6130789797-600x800.jpg"
+    }
+  ]
+}

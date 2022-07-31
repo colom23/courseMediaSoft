@@ -1,0 +1,12 @@
+.items-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 30px;
+  row-gap: 50px;
+
+  &_load {
+    font-size: 24px;
+    text-align: center;
+    padding-top: 40px;
+  }
+}

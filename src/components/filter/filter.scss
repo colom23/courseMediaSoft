@@ -1,0 +1,25 @@
+.filter {
+  margin: 20px auto;
+  font-size: 24px;
+  background-color: rgb(120, 70, 138);
+  color: white;
+  padding: 30px 0 30px;
+
+  &_select {
+    color: black;
+    background-color: rgb(246, 220, 255);
+  }
+
+  &__name {
+    padding: 0 30px;
+    display: block;
+    line-height: 2em;
+    border-bottom: 1px solid;
+
+    &:hover {
+      color: black;
+      background-color: rgb(246, 220, 255);
+      cursor: pointer;
+    }
+  }
+}
