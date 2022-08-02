@@ -1,9 +1,10 @@
 import "./item.scss";
 
-const Item = (name, price, picture, activeSubstance, onAdd, category) => {
+const Item = (name, id, price, picture, activeSubstance, onAdd, category) => {
   const ItemElement = document.createElement("div");
   ItemElement.className = `item  category-index-${category}`;
-  ItemElement.dataset.sort = price;
+  ItemElement.dataset.sort_price = price;
+  ItemElement.dataset.sort_default = id;
 
   const nameElement = document.createElement("span");
   nameElement.className = "item__name";

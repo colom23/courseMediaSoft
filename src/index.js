@@ -58,9 +58,10 @@ const generateItems = () => {
     const getIndexCategory = () => {
       return productCategories.indexOf(item.category);
     };
-    
+
     const itemElement = Item(
       item.name,
+      item.id,
       item.price,
       item.picture,
       item.activeSubstance,
@@ -97,7 +98,7 @@ const generateItemsPopup = () => {
 
 async function getResponse() {
   deleteLoad();
-  let response = await fetch("http://localhost:3000/notebooks");
+  let response = await fetch("http://localhost:3000/products");
   let content = await response.json();
   addProductArray(content);
   generateItems();
@@ -114,7 +115,7 @@ function addProductArray(arr) {
   }
 }
 
-setTimeout(getResponse, 3000);
+setTimeout(getResponse, 1000);
 
 const sidebar = document.querySelector(".sidebar");
 const content = document.querySelector(".content");

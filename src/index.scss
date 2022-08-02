@@ -6,10 +6,19 @@
   grid-template: 1fr / 1fr minmax(auto, 1300px) 1fr;
 }
 
+body.lock {
+  overflow: hidden;
+  padding-right: 17px;
+}
+
 .wrapper {
   min-height: 100vh;
 }
-
+.sticky {
+  position: sticky;
+  top: 0;
+  padding-top: 10px;
+}
 .conteiner {
   grid-column: 2 / 3;
   margin-top: 60px;

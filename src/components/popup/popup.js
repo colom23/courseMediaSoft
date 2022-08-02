@@ -7,7 +7,7 @@ const Popup = () => {
   const popapLink = document.createElement("a");
   popapLink.className = "popup_link";
 
-  popapLink.href = "#cart";
+  popapLink.href = "#sticky";
 
   const bodyPopupElement = document.createElement("div");
   bodyPopupElement.className = "popup__body";
@@ -20,7 +20,6 @@ const Popup = () => {
 
   const nameElement = document.createElement("span");
   nameElement.className = "popup__text_empty";
-  //nameElement.innerText = "Вы не добавили ни одного товара.";
 
   const checkEmptyCart = () => {
     const popupItems = document.querySelector(".popup__item");
@@ -50,9 +49,7 @@ const Popup = () => {
   closeElement.addEventListener("click", () => {
     let popup = document.querySelector(".popup");
     popup.classList.remove("active");
-
-    document.body.style.position = "";
-    document.body.style.top = "";
+    document.body.classList.remove("lock");
   });
 
   document.addEventListener("click", (e) => {
@@ -60,17 +57,16 @@ const Popup = () => {
     if (e.target === popupBg) {
       let popup = document.querySelector(".popup");
       popup.classList.remove("active");
-
-      document.body.style.position = "";
-      document.body.style.top = "";
+      document.body.classList.remove("lock");
     }
   });
 
   const openPopup = () => {
     let popup = document.querySelector(".popup");
     popup.classList.add("active");
+    document.body.classList.add("lock");
+
     checkEmptyCart();
-    document.body.style.paddingRight = "17px";
   };
 
   PopupElement.appendChild(popapLink);
