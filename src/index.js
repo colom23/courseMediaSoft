@@ -118,12 +118,12 @@ function addProductArray(arr) {
 setTimeout(getResponse, 1000);
 
 const sidebar = document.querySelector(".sidebar");
-const content = document.querySelector(".content");
+const catalog = document.querySelector(".catalog");
 
 sidebar.appendChild(filterElement);
 sidebar.appendChild(CartOrderElement);
 
 document.body.appendChild(PopupElement);
 
-content.appendChild(sortElement);
-content.appendChild(itemsList);
+catalog.appendChild(sortElement);
+catalog.appendChild(itemsList);

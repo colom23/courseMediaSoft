@@ -14,7 +14,7 @@ const Sort = () => {
   const sortMinPriceElement = document.createElement("span");
   sortMinPriceElement.className = "sort__count sort__count_min";
   sortMinPriceElement.innerText = "цена";
-  sortMinPriceElement.addEventListener("click", () => sortMin());
+  sortMinPriceElement.addEventListener("click", () => sort("_min"));
 
   const sortItemDefaultElement = document.createElement("a");
   sortItemDefaultElement.className = "sort__item";
@@ -22,7 +22,7 @@ const Sort = () => {
   const sortDefaultElement = document.createElement("span");
   sortDefaultElement.className = "sort__count sort__count_default sort_select";
   sortDefaultElement.innerText = "по умолчанию";
-  sortDefaultElement.addEventListener("click", () => sortDefault());
+  sortDefaultElement.addEventListener("click", () => sort("_default"));
 
   const sortItemMaxElement = document.createElement("a");
   sortItemMaxElement.className = "sort__item";
@@ -30,79 +30,65 @@ const Sort = () => {
   const sortMaxPriceElement = document.createElement("span");
   sortMaxPriceElement.className = "sort__count sort__count_max";
   sortMaxPriceElement.innerText = "цена";
-  sortMaxPriceElement.addEventListener("click", () => sortMax());
+  sortMaxPriceElement.addEventListener("click", () => sort("_max"));
 
   const titleFilterElement = document.createElement("span");
   titleFilterElement.className = "filter__title";
   titleFilterElement.innerText = "Сортировать по:";
 
-  const sortDefault = () => {
-    sortDefaultElement.classList.add("sort_select");
-    sortMaxPriceElement.classList.remove("sort_select");
-    sortMinPriceElement.classList.remove("sort_select");
+  const sort = (typeSort) => {
+    const selectSort = document.querySelector(".sort_select");
+    selectSort.classList.remove("sort_select");
 
     let itemProduct = document.querySelector(".items-list");
 
-    for (let i = 0; i < itemProduct.children.length; i++) {
-      for (let j = i; j < itemProduct.children.length; j++) {
+    switch (typeSort) {
+      case "_max":
+        sortMaxPriceElement.classList.add("sort_select");
+        sortMax(itemProduct);
+        break;
+      case "_min":
+        sortMinPriceElement.classList.add("sort_select");
+        sortDefaultorMin(itemProduct, "_price");
+        break;
+      case "_default":
+        sortDefaultElement.classList.add("sort_select");
+        sortDefaultorMin(itemProduct, typeSort);
+        break;
+    }
+  };
+
+  const sortDefaultorMin = (itemProd, type) => {
+    for (let i = 0; i < itemProd.children.length; i++) {
+      for (let j = i; j < itemProd.children.length; j++) {
         if (
-          +itemProduct.children[i].getAttribute("data-sort_default") >
-          +itemProduct.children[j].getAttribute("data-sort_default")
+          +itemProd.children[i].getAttribute(`data-sort${type}`) >
+          +itemProd.children[j].getAttribute(`data-sort${type}`)
         ) {
-          let replaceItem = itemProduct.replaceChild(
-            itemProduct.children[j],
-            itemProduct.children[i]
+          let replaceItem = itemProd.replaceChild(
+            itemProd.children[j],
+            itemProd.children[i]
           );
 
-          insertAfter(replaceItem, itemProduct.children[i]);
+          insertAfter(replaceItem, itemProd.children[i]);
         }
       }
     }
   };
 
-  const sortMin = () => {
-    sortMinPriceElement.classList.add("sort_select");
-    sortMaxPriceElement.classList.remove("sort_select");
-    sortDefaultElement.classList.remove("sort_select");
-
-    let itemProduct = document.querySelector(".items-list");
-
-    for (let i = 0; i < itemProduct.children.length; i++) {
-      for (let j = i; j < itemProduct.children.length; j++) {
+  const sortMax = (itemProd) => {
+    for (let i = 0; i < itemProd.children.length; i++) {
+      for (let j = i; j < itemProd.children.length; j++) {
         if (
-          +itemProduct.children[i].getAttribute("data-sort_price") >
-          +itemProduct.children[j].getAttribute("data-sort_price")
+          +itemProd.children[i].getAttribute("data-sort_price") <
+          +itemProd.children[j].getAttribute("data-sort_price")
         ) {
-          let replaceItem = itemProduct.replaceChild(
-            itemProduct.children[j],
-            itemProduct.children[i]
+          let replaceItem = itemProd.replaceChild(
+            itemProd.children[j],
+            itemProd.children[i]
           );
 
-          insertAfter(replaceItem, itemProduct.children[i]);
-        }
-      }
-    }
-  };
-
-  const sortMax = () => {
-    sortMinPriceElement.classList.remove("sort_select");
-    sortMaxPriceElement.classList.add("sort_select");
-    sortDefaultElement.classList.remove("sort_select");
-
-    let itemProduct = document.querySelector(".items-list");
-
-    for (let i = 0; i < itemProduct.children.length; i++) {
-      for (let j = i; j < itemProduct.children.length; j++) {
-        if (
-          +itemProduct.children[i].getAttribute("data-sort_price") <
-          +itemProduct.children[j].getAttribute("data-sort_price")
-        ) {
-          let replaceItem = itemProduct.replaceChild(
-            itemProduct.children[j],
-            itemProduct.children[i]
-          );
-
-          insertAfter(replaceItem, itemProduct.children[i]);
+          insertAfter(replaceItem, itemProd.children[i]);
         }
       }
     }
