@@ -40,10 +40,7 @@ const Cart = (cart, openPopup) => {
   const btnMakeOrderElement = document.createElement("button");
   btnMakeOrderElement.className = "order__make_order button-cart";
   btnMakeOrderElement.innerText = `Оформить заказ`;
-  btnMakeOrderElement.addEventListener("click", (e) => {
-    e.preventDefault();
-    // openPopup();
-  });
+
 
   const btnOpenCartElement = document.createElement("button");
   btnOpenCartElement.className = "cart__popup open-popup button-cart";

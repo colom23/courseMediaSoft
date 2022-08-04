@@ -11,7 +11,7 @@
     {
       "id": "2",
       "name": "Сыворотка для лица с экстрактом прополиса 15% и увлажняющим комплексом 2% для решения проблем черных точек, закрытых и открытых комедонов",
-      "price": 515,
+      "price": 615,
       "category": "Сыворотка",
       "activeSubstance": "PROPOLIS EXTRACT 15% + MOISTURIZING COMPLEX 2%",
       "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/11/New-Cards_59-01-scaled.jpg"
@@ -95,6 +95,30 @@
       "category": "Пенка для умывания",
       "activeSubstance": "OAT AMINO ACIDS + PHOSPHOLIPIDS",
       "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/10/6130789797-600x800.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Очищающая анти-акне пенка для умывания с амидом азелаиновой кислоты 3%, молочной кислотой 3% и бетаином 2%",
+      "price": 870,
+      "category": "Пенка для умывания",
+      "activeSubstance": "AZELAMIDE 3% + LACTIC ACID 3% + BETAINE 2%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2022/05/New-Cards_119-01-scaled.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Энзимная пенка для умывания, для всех типов кожи",
+      "price": 520,
+      "category": "Пенка для умывания",
+      "activeSubstance": "SOFT SURFACTANT COMPLEX + PINEAPPLE FRUIT EXTRACT 1% + PAPAYA EXTRACT 1%",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/06/New-Cards_4-10-min-scaled.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Очищающий гель для умывания с комплексом мягких ПАВ и аллантоином для жирной и проблемной кожи.",
+      "price": 540,
+      "category": "Гель для умывания",
+      "activeSubstance": "SOFT SURFACANT COMPLEX + ALLANTOIN",
+      "picture": "https://www.art-fact-products.com/wp-content/uploads/2021/05/New-Cards-45-min.jpg"
     }
   ]
 }
